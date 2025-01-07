@@ -27,13 +27,15 @@ namespace ConsoleApp5
                 catch (FormatException)
                 { 
                     Console.WriteLine("Erreur de Format");
+                    Console.WriteLine("Saisie un âge ");
+                    a = Convert.ToInt32(Console.ReadLine());
                 }
                 finally
                 {
                     Console.ReadKey();
                 }
             }
-            while (correct == true);
+            while (correct == false);
         }
     }
 }
